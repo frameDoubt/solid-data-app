@@ -9,9 +9,13 @@
   width: 100vw;
 }
 
-
+.formStyle {
+  display: flex;
+  flex-direction: column;
+}
 
 .input {
   line-height: larger;
   font-size: larger;
+  margin: .5em 0 .5em 0;
 }

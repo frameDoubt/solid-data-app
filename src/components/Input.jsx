@@ -5,16 +5,22 @@ function Input() {
   const [subject, setSubject] = createSignal("");
   
   return (
-    
-    <label>
-      <input
+    <form class={styles.formStyle}>
+      <label>
+        <input
+          class={styles.input}
+          type="text"
+          id="subject"
+          value={subject()}
+          onChange={(e) => setSubject(e.currentTarget.value)}
+        />
+      </label>
+      <button
         class={styles.input}
-        type="text"
-        id="subject"
-        value={subject()}
-        onChange={(e) => setSubject(e.currentTarget.value)}
-      />
-    </label>
+      >
+        Submit
+      </button>
+    </form>
   );
 }
 
