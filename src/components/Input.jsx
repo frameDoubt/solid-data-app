@@ -6,15 +6,20 @@ function Input() {
   
   return (
     <form class={styles.formStyle}>
-      <label>
+      <label for="subjectInput"
+        class={styles.label}
+      >
+        Subject Input
+      </label>
         <input
+          name="subjectInput"
           class={styles.input}
           type="text"
           id="subject"
           value={subject()}
+          placeholder="add task or person"
           onChange={(e) => setSubject(e.currentTarget.value)}
         />
-      </label>
       <button
         class={styles.input}
       >
