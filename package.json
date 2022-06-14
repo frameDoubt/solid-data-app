@@ -6,17 +6,24 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "jest"
   },
   "license": "MIT",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "babel-preset-solid": "^1.4.2",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.1",
     "vite": "^2.9.9",
     "vite-plugin-solid": "^2.2.6"
   },
+  "peerDependencies": {
+    "babel-preset-solid": "^1.0.0"
+  },
   "dependencies": {
+    "@babel/preset-env": "^7.13.9",
+    "babel-jest": "^27.0.0",
     "solid-jest": "^0.0.2",
     "solid-js": "^1.4.2"
   }
